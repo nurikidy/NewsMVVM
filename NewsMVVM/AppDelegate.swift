@@ -14,6 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // mengganti warna bg nav bar
+        UINavigationBar.appearance().barTintColor = .AppNavBarColor
+        
+        // mengganti warna title bar ketika large mode
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.AppNavBarLargeTitleTextColor]
+        
+        // mengganti warna title nav bar ketika large mode
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.AppNavBarTitleTextColor]
         return true
     }
 
